@@ -29,7 +29,7 @@ zstyle ':prezto:*:*' color 'yes'
 modulesToLoad=( 'environment' 'terminal' 'editor' 'git' )
 if [[ "$(uname -s)" = "Darwin" ]]; then modulesToLoad+=( 'homebrew' 'osx' ); fi;
 if ! [ -x "$(command -v node)" ]; then modulesToLoad+=( 'node' ); fi;
-modulesToLoad+=(.'history' 'directory' 'spectrum' 'utility' 'completion' 'prompt' )
+modulesToLoad+=( 'history' 'directory' 'spectrum' 'utility' 'completion' 'prompt' )
 
 zstyle ':prezto:load' pmodule $modulesToLoad
 
