@@ -26,12 +26,23 @@ zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
-modulesToLoad=( 'environment' 'terminal' 'editor' 'git' )
-if [[ "$(uname -s)" = "Darwin" ]]; then modulesToLoad+=( 'homebrew' 'osx' ); fi;
-if ! [ -x "$(command -v node)" ]; then modulesToLoad+=( 'node' ); fi;
-modulesToLoad+=( 'history' 'directory' 'spectrum' 'utility' 'completion' 'contrib-prompt' 'prompt' )
 
-zstyle ':prezto:load' pmodule $modulesToLoad
+zstyle ':prezto:load' pmodule \
+    'environment' \
+    'terminal' \
+    'editor' \
+    'git' \
+    'homebrew' \
+    'osx' \
+    'node' \
+    'ruby' \
+    'history' \
+    'directory' \
+    'spectrum' \
+    'utility' \
+    'completion' \
+    'contrib-prompt' \
+    'prompt'
 
 #
 # Autosuggestions
