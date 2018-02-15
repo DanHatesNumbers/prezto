@@ -13,6 +13,6 @@ fi
 # Customize to your needs...
 
 # Source work specific functions if they exist
-if [[ -f "${ZDOTDIR:-$HOME}/.zprezto/zshrc_work" ]]; then
-  Source "${ZDOTDIR:-$HOME}/.zprezto/zshrc_work"
+if [[ -f "${ZDOTDIR:-$HOME}/.zshrc_work" ]]; then
+  Source "${ZDOTDIR:-$HOME}/.zshrc_work"
 fi
